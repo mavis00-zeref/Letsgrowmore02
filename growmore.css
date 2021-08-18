@@ -1,0 +1,169 @@
+body{
+    background-color:#222;
+    margin:0;
+    padding:0;
+
+  } 
+  .heading{
+      margin-top: -80px;
+      width:100%;
+      height:120px;
+      background-color: #111;
+    
+  }
+  h1{
+    padding-left:45px;
+    padding-top:12px;
+    float: center;
+    font-family: "Exo", sans-serif;
+    font-size: 6vw;
+   font-weight: 1000;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+     background: linear-gradient(119deg, 
+    var(--color-1) 9%, 
+    transparent 19%,transparent 20%, 
+    var(--color-2) 20%, var(--color-2)  39%,
+    transparent 39%,transparent 40%, 
+    var(--color-3) 40%,var(--color-3) 59% ,
+    transparent 59%,transparent 60%, 
+    var(--color-4) 60%, var(--color-4) 79%,
+    transparent 79%, transparent 80%, 
+    var(--color-5) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+  :root{
+    --color-1: #186cb8;
+    --color-2: #2a9a9f;
+    --color-3: #f1b211;
+    --color-4: #e83611;
+    --color-5: #f9002f;
+  }
+  .container {
+    padding: 0.5rem;   
+    text-align: center;
+  }
+.wrapper{
+
+    background: radial-gradient(circle at 78% 48% ,var(--color-1) 1.8%,transparent  .8% ), 
+    radial-gradient(circle at 75% 43%,var(--color-2) .95% ,transparent .45% ), 
+    radial-gradient(circle at 74.5% 47.5%,var(--color-3) .95% ,transparent .5% ), 
+    radial-gradient(circle at 78.5% 45.5%,var(--color-4) 1.25%,transparent .25% ),
+
+    radial-gradient(circle at 56% 56% ,var(--color-1) .8%,transparent  .8% ), 
+    radial-gradient(circle at 55% 58%,var(--color-2) .45% ,transparent .45% ), 
+    radial-gradient(circle at 56.5% 59.5%,var(--color-3) .5% ,transparent .5% ), 
+    radial-gradient(circle at 67.5% 60.5%,var(--color-4) .25%,transparent .25% );
+}
+/* designing a button*/
+  #button1{
+      cursor: pointer;
+      margin-right: 35px;
+      margin-top:-93px;
+    float: right;
+    height:80px;
+    width:207px;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 1.9rem;
+    border-radius: 1.3rem;
+    color:cyan;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.5));
+    box-shadow: 5px 2px 4px #fff;
+  }
+  .loader::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    width:  200px;
+    height:  100px;
+    border-radius: 50%;
+    border: 3px solid red;
+
+}
+
+.display{
+padding:2rem;  
+}
+.display .users{
+width: 90%;
+margin: 0 auto;
+}
+.display .user #box{
+list-style:none;
+display: -webkit-box;
+display: -ms-flexbox;
+display:flex;
+-ms-flex-wrap: wrap;
+ flex-wrap: wrap;
+}
+
+/* designing a loader*/
+.loader{
+  width : 120px;
+  height:120px;
+  left:45%;
+  top:25%;
+  border: 5px solid #fff;
+  border-radius: 50%;
+border-top: 5px solid yellow;
+  display: inline-block;
+  position: relative;
+ -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+
+}
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+.display .users #box li {
+background-color: rgba(255, 255, 255, 0.7);
+width: 20rem;
+height: 26rem;
+border-radius: 4rem;
+margin: 1.5rem;
+text-align: center;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.151) 0px 8px 16px, rgba(0, 0, 0, 0.151) 0px 16px 32px, rgba(0, 0, 0, 0.151) 0px 32px 64px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.151) 0px 8px 16px, rgba(0, 0, 0, 0.151) 0px 16px 32px, rgba(0, 0, 0, 0.151) 0px 32px 64px;
+}
+.display .users #box li:hover {
+-webkit-transform: scale(1.2 1.1);
+        transform: scale(1.2 1.1);
+}
+.display .users #box li .image img{
+padding-top:1rem;
+ width: 120%;
+ height: 120%;
+border-radius: 4rem;
+-o-object-fit: cover;
+   object-fit: cover;
+-o-object-position: center;
+   object-position: center;
+}
+.display .users #box li h2 {
+padding-top:1.3rem;
+margin: 2rem 1rem  0.5rem 0.2rem;
+}
+.display .users li i {
+font-size: 3rem;
+color: white;
+margin-top: 1rem;
+}
+        
+    
+
+  
